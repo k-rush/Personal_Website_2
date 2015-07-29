@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+@import url("nav.css");
+
+body{ 
+	font-size:13px; 
+	font-family:Georgia, "Times New Roman", Times, serif; 
+	color:#605B5B; 
+	background-color:#D0D0D0;
+}
+
+a {
+	outline:none; 
+	text-decoration:none; 
+	color:#FF9900; 
+	background-color:#FFFFFF;
+}
+
+#header{
+	padding:15px 0px;
+}
+
+#copyright{
+	padding:15px 0px;
+	color:#605B5B; 
+	background-color:#D0D0D0; 
+	border-top:1px solid #D5D5D5;
+}
+
+
+#home h1 {
+	text-align: center;
+}
+
+#home h2 {
+	font-size: 20px;
+	line-height: 100%
+}
+
+#platform h1, #platform h2, #platform h3, #platform p {
+	text-align: center;
+}
+
+#platform h2  {
+	font-size: 20px;
+	line-height: 100%
+}
+#platform h3 {
+	font-size: 30px;
+}
+
+#platform p {
+	font-size: 18px;
+}
+
+#platform img {
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	height:250px;
+}
+
+#about {
+	padding-bottom: 15px;
+}
+
+#about h1, #about h2, #about h4 {
+	text-align: center;
+}
+
+#about h3 {
+	text-align: left;
+	font-size: 18px;
+}
+
+#about p {
+	font-size: 18px;
+	padding:15px 0px 15px 0px;
+}
+
+#careers h1 {
+	text-align: center;
+}
+
+#careers h2 {
+}
+
+#careers h3 {
+	padding-left: 25px;
+}
+
+#careers p {
+	padding-left: 35px;
+}
+
+
+.top-image img{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -1px;
+	padding: 0px;
+	width:100%;
+}
+.client-quote {
+	text-align: right;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+<title>Street Diligence</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="layout/styles/style.css" type="text/css" />
+
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" />
+
+<link rel="stylesheet" href="jquery-ui/jquery-ui.css" type="text/css" />
+<link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css" type="text/css" />
+<link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css" type="text/css" />
+
+<script type="text/javascript" src="layout/scripts/jquery.js"></script>
+<script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+<script src="layout/scripts/jquery.ba-hashchange.js"></script>
+
+<script>
+$(function() {
+    $(window).hashchange(function() {
+      
+      var cache = {'':$('<div class="item">').appendTo("#content-container").load('home.html')}
+      var url = window.location.hash.replace('#', '');
+      //alert("hashchange" + url);
+      $("#content-container").children(":visible").hide();
+
+      if ( cache[ url ] ) {
+        alert("in cache");
+        cache[url].show();                  
+      } else {
+        alert("not in cache");
+        cache[url]=$('<div class="item">').appendTo("#content-container").load(url);
+      }
+    });
+
+    $(window).hashchange();
+
+});
+</script>
+
+</head>
+
+<body>
+
+  <div id="header" class="row-fluid">
+    <div id="logo" class="span11 offset1">
+      <a href="index.html"><img src="images/street-diligence-logo.png"></a>
+    </div>
+  </div>
+
+  <div class="row-fluid" id="navbar">
+    <div class="span12">
+      <div class="row-fluid">
+        <div id="nav" class="span10 offset2">
+        <ul>
+          <li><a class="update-content" href="#home.html">Home</a></li>
+          <li><a class="update-content" href="#platform.html">Our Platform</a></li>
+          <li><a class="update-content" href="#about.html">About Us</a></li>
+          <li><a class="update-content" href="#careers.html">Careers</a></li>
+          <li><a class="update-content" href="#contact.html">Contact Us</a></li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT AREA - Ajax calls will fill this with html. -->
+  <div id="content-container">
+    
+  </div>
+
+  <div class="row-fluid" id="copyright">
+    <div class="span12">
+      <div class="row-fluid">
+        <div class="span10 offset2"><p>Copyright 2015 Street Diligence. All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
