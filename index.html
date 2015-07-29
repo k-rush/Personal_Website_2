@@ -6,12 +6,9 @@
 
 <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" />
 
-<link rel="stylesheet" href="jquery-ui/jquery-ui.css" type="text/css" />
-<link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css" type="text/css" />
-<link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css" type="text/css" />
-
 <script type="text/javascript" src="layout/scripts/jquery.js"></script>
-<script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="layout/scripts/jquery.ba-hashchange.js"></script>
 
 <script>
@@ -20,14 +17,11 @@ $(function() {
       
       var cache = {'':$('<div class="item">').appendTo("#content-container").load('home.html')}
       var url = window.location.hash.replace('#', '');
-      //alert("hashchange" + url);
       $("#content-container").children(":visible").hide();
 
-      if ( cache[ url ] ) {
-        alert("in cache");
+      if ( cache[ url ] ) {      
         cache[url].show();                  
       } else {
-        alert("not in cache");
         cache[url]=$('<div class="item">').appendTo("#content-container").load(url);
       }
     });
