@@ -2,33 +2,47 @@
 
 @import url("nav.css");
 
-body{ 
-	font-size:13px; 
-	font-family:Georgia, "Times New Roman", Times, serif; 
-	color:#605B5B; 
-	background-color:#D0D0D0;
+
+#header a:link, a:visited {  
+	color:#000;
+}
+#header a:hover {
+	color:#111;
+	text-decoration: none;
 }
 
-a {
-	outline:none; 
-	text-decoration:none; 
-	color:#FF9900; 
-	background-color:#FFFFFF;
+td {
+	padding:10px;
+	border:1px solid;
 }
 
 #header{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background: url("http://subtlepatterns.com/patterns/creampaper.png") repeat scroll 0% 0%;
+	margin: 0; padding: 0;
 	padding:15px 0px;
+	font: 36pt;
 }
+
+
 
 #copyright{
-	padding:15px 0px;
-	color:#605B5B; 
-	background-color:#D0D0D0; 
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#FFFFFF; 
 	border-top:1px solid #D5D5D5;
+	background-color:#373E46; 
+	padding:15px 0px;
 }
 
 
-#home h1 {
+
+/********************** HOME ******************************/
+#home {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background: url("http://subtlepatterns.com/patterns/creampaper.png") repeat scroll 0% 0%;
+	padding-bottom: 30px;
+}
+#home h1, h2{
 	text-align: center;
 }
 
@@ -37,62 +51,202 @@ a {
 	line-height: 100%
 }
 
-#platform h1, #platform h2, #platform h3, #platform p {
+#home h3, h4 {
 	text-align: center;
 }
 
-#platform h2  {
+#home #skills {
+	background: #eee;
+	border-radius: 8px;
+	border: 1px solid black;
+}
+
+#home .skill {
+	margin:5px;
+}
+
+#home .colorful {
+	color:#006;
+}
+
+/********************** RESUME ******************************/
+
+#resume .intro  {
+
+}
+
+#profile {
+	height: 100px;
+}
+#resume {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background: url("http://subtlepatterns.com/patterns/creampaper.png") repeat scroll 0% 0%;
+	margin: 0; 
+	padding-bottom: 30px;
+}
+
+#resume .resume-content {
+		margin-top:10px;
+	margin-bottom: 10px;
+	background: #eee;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+#resume .exp-header {
+	border-top: 1px solid black;
+
+	border-bottom: 1px solid black;
+}
+
+#resume a:link, a:visited {  
+	color:#605B5B;
+}
+#resume a:hover {
+	color:#111;
+	text-decoration: none;
+}
+
+#resume .colorful {
+	color:#006;
+}
+
+#resume h1 {
+	margin-left:10px;
+	text-align: center;
+	font-size:30px;
+}
+#resume .resume-content h1 {
+	margin-left:10px;
+	text-align: center;
+	font-size:30px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif
+}
+#resume .resume-content h2  {
+	margin-left:10px;
+	text-align:left;
 	font-size: 20px;
-	line-height: 100%
 }
-#platform h3 {
-	font-size: 30px;
-}
-
-#platform p {
+#resume h3 {
+	text-align:left;
+	margin-left:10px;
 	font-size: 18px;
 }
 
-#platform img {
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-	height:250px;
+#resume h4 {
+	text-align:left;
+	margin-left:10px;
+	font-size: 15px;
 }
 
-#about {
-	padding-bottom: 15px;
+#resume p {
+	margin-left:10px;
+	font-size: 13px;
+
 }
 
-#about h1, #about h2, #about h4 {
+#resume ul {
+	margin-left:10px;
+	font-size: 13px;
+}
+
+
+
+/********************** GITHUB ******************************/
+
+#github {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background: url("http://subtlepatterns.com/patterns/creampaper.png") repeat scroll 0% 0%;
+	margin: 0;
+	padding-bottom: 30px;
+}
+#github a:link, a:visited {  
+	color:#000;
+}
+#github a:hover {
+	color:#111;
+	text-decoration: none;
+}
+#github .colorful {
+	color:#006;
+}
+#github h1, h2 {
 	text-align: center;
 }
 
-#about h3 {
+#github h4 {
 	text-align: left;
-	font-size: 18px;
 }
 
-#about p {
-	font-size: 18px;
-	padding:15px 0px 15px 0px;
+#github .github-content {
+	background: #eee;
+	border-radius: 5px;
+	border: 1px solid black;
 }
 
-#careers h1 {
-	text-align: center;
+#github #avatar {
+	height:50px;
 }
 
-#careers h2 {
+#github .ui-accordion .ui-accordion-content {
+	background: #eee;
 }
 
-#careers h3 {
-	padding-left: 25px;
+#github .ui-accordion .ui-accordion-header {
+	background: #eee;
 }
 
-#careers p {
-	padding-left: 35px;
+#github .ui-accordion  a {
+	color: #006;
 }
 
+#github .ui-accordion h4 {
+	font-size:18px;
+	text-decoration: none;
+}
+
+#github .ui-accordion p {
+	font-size:15px;
+	text-decoration: none;
+}
+
+/********************** BLOG ******************************/
+#blog {
+	background: url("http://subtlepatterns.com/patterns/creampaper.png") repeat scroll 0% 0%; 
+	padding-bottom: 30px;
+	padding-top: 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#blog .post {
+	background: #eee;
+	padding:15px;
+	margin-top:10px;
+	margin-bottom: 10px;
+	border-radius: 25px;
+	border: 1px solid black;
+}
+#blog .post-header {
+	border-bottom: 1px solid black;
+}
+#blog a:link, a:visited {  
+	color:#373E46;
+}
+#blog a:hover {
+	color:#111;
+	text-decoration: none;
+}
+#blog .colorful {
+	color:#006;
+}
+
+
+#contact {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background: url("http://subtlepatterns.com/patterns/creampaper.png") repeat scroll 0% 0%;
+	margin: 0; 
+	padding-bottom: 30px;
+}
 
 .top-image img{
 	display:block;

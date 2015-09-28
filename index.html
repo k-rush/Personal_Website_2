@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <head>
-<title>Street Diligence</title>
+<title>Kyle D. Rush</title>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="shortcut icon" href="images/k-icon.ico">
 <link rel="stylesheet" href="layout/styles/style.css" type="text/css" />
 
 <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css" />
 
+<link rel="stylesheet" href="jquery-ui/jquery-ui.css" type="text/css" />
+<link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css" type="text/css" />
+<link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css" type="text/css" />
+
 <script type="text/javascript" src="layout/scripts/jquery.js"></script>
-<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="jquery-ui/jquery-ui.js"></script>
 <script src="layout/scripts/jquery.ba-hashchange.js"></script>
 
 <script>
 $(function() {
+
+      var cache = {'':$('<div class="item">').appendTo("#content-container").load('home.html')}
     $(window).hashchange(function() {
       
-      var cache = {'':$('<div class="item">').appendTo("#content-container").load('home.html')}
       var url = window.location.hash.replace('#', '');
+      
       $("#content-container").children(":visible").hide();
 
       if ( cache[ url ] ) {      
-        cache[url].show();                  
+        cache[url].show();
+        $("#content-container").show();                  
       } else {
-        cache[url]=$('<div class="item">').appendTo("#content-container").load(url);
+        cache[url]=$('<div class="item">').appendTo("#content-container").load(url, function() {
+          $("#content-container").show();
+        });
+        
       }
     });
 
     $(window).hashchange();
 
 });
+
 </script>
 
 </head>
@@ -37,7 +48,7 @@ $(function() {
 
   <div id="header" class="row-fluid">
     <div id="logo" class="span11 offset1">
-      <a href="index.html"><img src="images/street-diligence-logo.png"></a>
+      <a href="#"><h1><img id="profile" src="images/profile.jpg"> Kyle D. Rush</h1></a>
     </div>
   </div>
 
@@ -47,10 +58,11 @@ $(function() {
         <div id="nav" class="span10 offset2">
         <ul>
           <li><a class="update-content" href="#home.html">Home</a></li>
-          <li><a class="update-content" href="#platform.html">Our Platform</a></li>
-          <li><a class="update-content" href="#about.html">About Us</a></li>
-          <li><a class="update-content" href="#careers.html">Careers</a></li>
-          <li><a class="update-content" href="#contact.html">Contact Us</a></li>
+          <li><a class="update-content" href="#resume.html">Resume</a></li>
+          <li><a class="update-content" href="#github.html">Github</a></li>
+          <li><a class="update-content" href="#blog.html">Blog</a></li>
+          <li><a href="https://www.linkedin.com/in/kyledrush">Linkdin</a></li>
+          <li><a class="update-content" href="#contact.html">Contact</a></li>
         </ul>
         </div>
       </div>
@@ -65,7 +77,7 @@ $(function() {
   <div class="row-fluid" id="copyright">
     <div class="span12">
       <div class="row-fluid">
-        <div class="span10 offset2"><p>Copyright 2015 Street Diligence. All Rights Reserved.</p>
+        <div class="span10 offset2"><p>Copyright 2015 Kyle D. Rush. All Rights Reserved.</p>
         </div>
       </div>
     </div>

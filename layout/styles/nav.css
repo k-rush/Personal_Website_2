@@ -26,8 +26,10 @@
 
 #nav li a:link, #nav li a:visited, #nav li a:hover { 
 	margin:0 35px 0 0; 
-	font-size:14px; 
+	font-size:18px; 
 	text-transform:uppercase; 
+	text-decoration: bold;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	color:#FFFFFF; 
 	background-color:#373E46;
 	display: inline;
