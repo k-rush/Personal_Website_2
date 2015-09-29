@@ -18,7 +18,7 @@ td {
 
 #header{
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	background: url("http://subtlepatterns.com/patterns/creampaper.png") repeat scroll 0% 0%;
+	background: url('../../images/creampaper.png') repeat scroll 0% 0%;
 	margin: 0; padding: 0;
 	padding:15px 0px;
 	font: 36pt;
@@ -39,7 +39,7 @@ td {
 /********************** HOME ******************************/
 #home {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	background: url("http://subtlepatterns.com/patterns/creampaper.png") repeat scroll 0% 0%;
+	background: url("/images/creampaper.png") repeat scroll 0% 0%;
 	padding-bottom: 30px;
 }
 #home h1, h2{
