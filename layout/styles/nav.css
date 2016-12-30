@@ -16,7 +16,7 @@
 	float:left; 
 	list-style:none;
 	display: inline;
-padding:0 10px 0 0 ;
+	padding:0 10px 0 0 ;
 }
 
 #nav li a:link, #nav li a:visited, #nav li a:hover { 

@@ -37,8 +37,8 @@ td {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    	font-weight: 300;
    	font: 38pt;
-   	padding-left: 25%;
-   	width:50%;
+   	padding-left: 10%;
+   	width:80%;
    	color:#00704a;
 }
 
@@ -46,8 +46,8 @@ td {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    	font-weight: 300;
    	font: 15pt;
-   	padding-left: 25%;
-   	width:50%;
+   	padding-left: 10%;
+   	width:80%;
    	color:#00704a;
 }
 
@@ -75,25 +75,17 @@ td {
 	line-height: 100%
 }
 
+#home #bio {
+padding-left: 4%;
+
+}
+
 #home h3, h4 {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    	font-weight: 300;
 	text-align: center;
 }
 
-#home #skills {
-	background: #eee;
-	border-radius: 8px;
-	border: 1px solid black;
-}
-
-#home .skill {
-	margin:5px;
-}
-
-#home .colorful {
-	color:#006;
-}
 
 /********************** RESUME ******************************/
 
@@ -123,9 +115,6 @@ td {
 	text-decoration: none;
 }
 
-#resume .colorful {
-	color:#006;
-}
 
 #resume h2 {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
@@ -184,7 +173,8 @@ td {
 
 /********************** GITHUB ******************************/
 
-#github {font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+#github {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    	font-weight: 300;
 	margin: 0;
 	padding-bottom: 30px;
@@ -196,9 +186,7 @@ td {
 	color:#111;
 	text-decoration: none;
 }
-#github .colorful {
-	color:#006;
-}
+
 #github h1, h2, a{
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
    	font-weight: 300;
@@ -245,7 +233,6 @@ td {
 #blog {
 	background-color: #fff; 
 	padding-bottom: 30px;
-
 }
 
 
@@ -283,29 +270,3 @@ font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", He
 #blog a:hover {
 	text-decoration: none;
 }
-#blog .colorful {
-	color:#006;
-}
-
-
-#contact {
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   	font-weight: 300;
-	margin: 0; 
-	padding-bottom: 30px;
-}
-
-.top-image img{
-	display:block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: -1px;
-	padding: 0px;
-	width:100%;
-}
-.client-quote {
-	text-align: right;
-}
-
-
-/*url("/images/creampaper.png") repeat scroll 0% 0%;*/
